@@ -1,6 +1,6 @@
 :root {
   --ink: #273251;
-  --muted: #657087;
+  --muted: #4f5c72;
   --paper: #fffdf7;
   --green: #69b94f;
   --blue: #2f95dc;
@@ -79,9 +79,9 @@ a {
   justify-content: center;
   gap: 20px;
   padding: 8px 18px;
-  color: white;
+  color: var(--ink);
   font-weight: 900;
-  background: linear-gradient(90deg, var(--logo-red), var(--logo-green), var(--logo-blue));
+  background: linear-gradient(90deg, #fff7cf, #eaf8ff, #f3fff8);
 }
 
 .nav {
@@ -453,7 +453,7 @@ h3 {
 
 .button.primary {
   color: white;
-  background: var(--logo-green);
+  background: var(--ink);
 }
 
 .button.light {
@@ -599,18 +599,19 @@ h3 {
 .shortcut-grid span {
   width: fit-content;
   padding: 4px 8px;
-  color: white;
+  color: var(--ink);
   font-weight: 1000;
-  background: var(--logo-blue);
+  background: #c7ecff;
+  border: 1px solid var(--ink);
   border-radius: 999px;
 }
 
 .shortcut-grid a:nth-child(2n) span {
-  background: var(--logo-green);
+  background: #d7f4c8;
 }
 
 .shortcut-grid a:nth-child(3n) span {
-  background: var(--logo-red);
+  background: #ffd7d1;
 }
 
 .shortcut-grid strong {
@@ -806,9 +807,10 @@ h3 {
   display: grid;
   min-height: 58px;
   place-items: center;
-  color: white;
+  color: var(--ink);
   font-weight: 1000;
-  background: var(--blue);
+  background: #c7ecff;
+  border: 2px solid var(--ink);
   border-radius: 18px;
 }
 
@@ -858,11 +860,12 @@ h3 {
   height: 46px;
   place-items: center;
   margin-bottom: 14px;
-  color: white;
+  color: var(--ink);
   font-family: "Baloo 2", "Nunito", ui-sans-serif, system-ui, sans-serif;
   font-size: 1.45rem;
   font-weight: 800;
-  background: var(--logo-blue);
+  background: #c7ecff;
+  border: 2px solid var(--ink);
   border-radius: 50%;
 }
 
@@ -885,10 +888,10 @@ h3 {
   height: 58px;
   place-items: center;
   margin-bottom: 16px;
-  color: white;
+  color: var(--ink);
   font-size: 1.2rem;
   font-weight: 1000;
-  background: var(--coral);
+  background: #ffd7d1;
   border: 3px solid var(--ink);
   border-radius: 50%;
 }
@@ -1206,12 +1209,12 @@ h3 {
   min-width: 52px;
   height: 36px;
   padding: 0 10px;
-  color: white;
+  color: var(--ink);
   font-family: "Baloo 2", "Nunito", ui-sans-serif, system-ui, sans-serif;
   font-size: 0.8rem;
   font-weight: 1000;
   letter-spacing: 0;
-  background: var(--ink);
+  background: white;
   border: 2px solid var(--ink);
   border-radius: 12px 12px 16px 12px;
   box-shadow: 3px 3px 0 rgba(39, 50, 81, 0.35);
@@ -1220,19 +1223,19 @@ h3 {
 
 .page-content a[href$=".pdf"]::before {
   content: "PDF";
-  background: var(--logo-red);
+  box-shadow: inset 0 0 0 999px rgba(229, 82, 69, 0.18), 3px 3px 0 rgba(39, 50, 81, 0.35);
 }
 
 .page-content a[href$=".docx"]::before,
 .page-content a[href$=".doc"]::before {
   content: "DOC";
-  background: var(--logo-blue);
+  box-shadow: inset 0 0 0 999px rgba(47, 155, 216, 0.18), 3px 3px 0 rgba(39, 50, 81, 0.35);
 }
 
 .page-content a[href$=".xls"]::before,
 .page-content a[href$=".xlsx"]::before {
   content: "XLS";
-  background: var(--logo-green);
+  box-shadow: inset 0 0 0 999px rgba(111, 190, 74, 0.18), 3px 3px 0 rgba(39, 50, 81, 0.35);
 }
 
 .page-content a[href$=".xlsx"]::before {
@@ -1669,9 +1672,9 @@ h3 {
 .group-card > span:last-child {
   margin-top: 4px;
   padding: 9px 14px;
-  color: white;
+  color: var(--ink);
   font-weight: 1000;
-  background: var(--logo-blue);
+  background: #c7ecff;
   border: 2px solid var(--ink);
   border-radius: 999px;
 }
@@ -1937,13 +1940,13 @@ h3 {
   width: 58px;
   height: 58px;
   place-items: center;
-  color: white;
+  color: var(--ink);
   font-family: "Baloo 2", "Nunito", ui-sans-serif, system-ui, sans-serif;
   font-size: 1.25rem;
   font-weight: 800;
   background:
     radial-gradient(circle at 78% 25%, rgba(255, 255, 255, 0.34) 0 8px, transparent 9px),
-    var(--logo-blue);
+    #c7ecff;
   border: 3px solid var(--ink);
   border-radius: 18px;
   overflow: hidden;
@@ -1965,13 +1968,13 @@ h3 {
 .staff-detail:nth-child(3n + 2) .staff-avatar {
   background:
     radial-gradient(circle at 78% 25%, rgba(255, 255, 255, 0.34) 0 8px, transparent 9px),
-    var(--logo-green);
+    #d7f4c8;
 }
 
 .staff-detail:nth-child(3n) .staff-avatar {
   background:
     radial-gradient(circle at 78% 25%, rgba(255, 255, 255, 0.34) 0 8px, transparent 9px),
-    var(--logo-red);
+    #ffd7d1;
 }
 
 .staff-summary-text {
@@ -2223,7 +2226,7 @@ h3 {
   grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.15fr);
   gap: 28px;
   margin: 0 auto;
-  color: white;
+  color: var(--ink);
 }
 
 .contact h2 {
@@ -2243,13 +2246,13 @@ dl {
 }
 
 dt {
-  color: var(--yellow);
+  color: var(--logo-red);
   font-weight: 1000;
 }
 
 dd {
   margin: 0;
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--ink);
 }
 
 .external-links {
