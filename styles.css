@@ -158,6 +158,29 @@ a {
   white-space: nowrap;
 }
 
+.nav-toggle:focus-visible,
+.button:focus-visible,
+.page-content a:focus-visible,
+.shortcut-grid a:focus-visible,
+.mini-card:focus-visible,
+.group-card:focus-visible,
+.text-link:focus-visible,
+.submenu a:focus-visible,
+summary:focus-visible {
+  outline: 4px solid var(--logo-blue);
+  outline-offset: 4px;
+}
+
+.nav-toggle:focus-visible,
+.button:focus-visible,
+.shortcut-grid a:focus-visible,
+.mini-card:focus-visible,
+.group-card:focus-visible,
+.text-link:focus-visible,
+.submenu a:focus-visible {
+  border-radius: 18px;
+}
+
 .nav-links a:hover,
 .nav-links a:focus-visible,
 .nav-item:focus-within > a,
@@ -417,6 +440,10 @@ h3 {
   border-radius: 999px;
   box-shadow: 4px 4px 0 var(--ink);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button:focus-visible {
+  box-shadow: 0 0 0 4px rgba(59, 123, 255, 0.24), 4px 4px 0 var(--ink);
 }
 
 .button:hover {
@@ -1143,6 +1170,12 @@ h3 {
   text-decoration: none;
   background:
     linear-gradient(transparent 62%, rgba(255, 213, 77, 0.75) 0);
+}
+
+.page-content a:not(.button):focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
 }
 
 .page-content a[href$=".pdf"],
